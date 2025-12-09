@@ -105,8 +105,11 @@ public class EnterToArrays {
 
         enterToArrays.shuffle();
 
-        System.out.println("Sonrası: " + Arrays.toString(enterToArrays.array));
+        System.out.println();
 
+        System.out.println("Sonrası(Shuffle): " + Arrays.toString(enterToArrays.array));
+
+        System.out.print("Sıralama Sonrası(Buble Sort): ");
         enterToArrays.siralama();
 
         enterToArrays.input.close();
