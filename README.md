@@ -1,47 +1,40 @@
-# 🎲 Random Array Shuffler (Fisher-Yates Implementation)
+# 🔢 Java Array Master: Shuffle & Sort
 
-A Java console application that generates a dynamic integer array based on user input and shuffles it using the efficient **Fisher-Yates (Knuth) Shuffle** algorithm.
+A robust Java console application designed to demonstrate the logic behind fundamental Computer Science algorithms.
 
-## 🚀 Overview
+This project focuses on the **manual implementation** of array manipulation algorithms (Shuffling and Sorting) to understand deeply how they work under the hood, rather than relying on built-in Java methods like `Arrays.sort` or `Collections.shuffle`.
 
-This project demonstrates the manipulation of Arrays in Java, handling user input via `Scanner`, and implementing a core computer science algorithm for randomization. It is designed with **Object-Oriented Programming (OOP)** principles, avoiding global static methods for better memory management and code isolation.
+## 🚀 Features
 
-## ✨ Features
+- **Dynamic Array Initialization:** - Secure user input handling using `Scanner`.
+  - Validates against negative numbers and non-integer inputs.
+  - Populates the array with random integers.
 
-- **Dynamic Array Creation:** The user defines the size of the array at runtime.
-- **Random Population:** The array is automatically filled with random integers.
-- **Fisher-Yates Shuffle:** Implements the O(n) time complexity algorithm for unbiased permutation.
-- **Input Validation:** Handles user input securely.
-- **Resource Management:** Proper handling of `Scanner` resources to prevent memory leaks.
+- **Fisher-Yates Shuffle Algorithm:** - Manually implemented unbiased shuffling.
+  - Iterates backwards (`i--`) to ensure every permutation is equally likely.
 
-## 🛠️ Technologies Used
+- **Optimized Bubble Sort:** - Manually implemented sorting algorithm.
+  - Includes the critical optimization `(length - 1 - i)` in the inner loop to avoid redundant checks on already sorted elements at the end of the array.
 
-- **Language:** Java (JDK 8+)
-- **Libraries:** `java.util.Scanner`, `java.util.Random`, `java.util.Arrays`
-- **IDE:** VS Code 
+- **Clean Code & OOP:** - Follows Object-Oriented principles (no static abuse).
+  - Proper resource management (closing `Scanner` to prevent memory leaks).
 
-## ⚙️ How It Works (The Logic)
+## 🛠️ To-Do (Upcoming Features)
 
-1.  **Initialization:** The program asks the user for the desired array size.
-2.  **Population:** It creates the array and fills it with random numbers (bound by `size * 10`).
-3.  **Shuffling (Fisher-Yates):**
-    * The loop iterates backwards from the last element to the second element (`i > 0`).
-    * In each iteration, a random index `j` is selected from `0` to `i`.
-    * The elements at index `i` and `j` are swapped.
-    * *Why backwards?* This ensures that every permutation is equally likely and prevents "biased" shuffling.
+- [ ] **Implement Binary Search:** Add a manual Binary Search algorithm to find elements in the sorted array efficiently (O(log n)).
+- [ ] Add performance comparison with other sorting algorithms.
 
 ## 💻 How to Run
 
-1.  Clone this repository:
+1.  Clone the repository:
     ```bash
-    git clone [https://github.com/erenmente/random-array-shuffler.git](https://github.com/erenmente/random-array-shuffler.git)
+    git clone [https://github.com/erenmente/java-array-master.git](https://github.com/erenmente/java-array-master.git)
     ```
-2.  Navigate to the project directory.
-3.  Compile the Java file:
+2.  Compile the Java file:
     ```bash
     javac EnterToArrays.java
     ```
-4.  Run the application:
+3.  Run the application:
     ```bash
     java EnterToArrays
     ```
@@ -50,7 +43,15 @@ This project demonstrates the manipulation of Arrays in Java, handling user inpu
 
 ```text
 Kaç Elemanlı bir dizi istersiniz? 5
-Dizi oluşturuldu ve dolduruldu.
----------------------------
-Karıştırmadan Önce: [12, 45, 2, 8, 33]
-Karıştırdıktan Sonra: [8, 33, 12, 2, 45]
+
+öncesi: [12, 4, 88, 3, 25]
+Sonrası (Shuffle): [3, 88, 12, 25, 4]
+Sıralama Sonrası (Bubble Sort): [3, 4, 12, 25, 88]
+```
+
+## 👨‍💻 Author
+
+**Eren Mente**
+* Software Engineering Student at Fırat University
+* Passionate about Java, Algorithms, and Backend Development.
+* [GitHub Profil](https://github.com/erenmente)
