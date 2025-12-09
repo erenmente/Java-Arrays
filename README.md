@@ -28,7 +28,7 @@ This project focuses on the **manual implementation** of array manipulation algo
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/erenmente/java-array-master.git](https://github.com/erenmente/java-array-master.git)
+    git clone https://github.com/erenmente/Java-Arrays.git
     ```
 2.  Compile the Java file:
     ```bash
